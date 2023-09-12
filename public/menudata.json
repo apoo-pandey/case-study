@@ -1,0 +1,151 @@
+[
+        {
+            "id":1,
+            "dish": "Paneer Lababdar",
+            "description":"Paneer tossed in a creamy onion and tomato mild gravy",
+            "price": 250,
+            "veg":"true",
+            "quantity": 1
+        },
+        {
+            "id":14,
+            "dish":"Grilled Chicken Tenders",
+            "description":"Juicy and Tender, Delicious with All Sides",
+            "price": 550,
+            "veg":"false",
+            "quantity": 1
+        },
+        {
+            "id":2,
+            "dish": "Tandoori Soya Chaap",
+            "description":"Soya Chaap tossed in a tangy marinade and tandoor roasted",
+            "price": 230,
+            "veg":"true",
+            "quantity": 1
+        },
+        {
+            "id": 11,
+            "dish":"Chicken Livers and Portuguese Roll",
+            "description":"Chicken Livers Topped with PERi-PERi Sauce, Served with A Roll To Soak Up The Sauce",
+            "price":250,
+              "veg":"false",
+            "quantity":1
+        },
+       
+        {
+            "id":3,
+            "dish": "Curd Rice",
+            "description":"a delightful combination of curd and rice",
+            "price": 150 ,
+            "veg":"true",
+            "quantity": 1 
+        },
+        {
+            "id":16,
+            "dish":"No Bones Platter",
+            "description":"For 2-3 People, Chicken Butterfly and a Espetada, with 2 Large or 4 Regular Sides",
+            "price":1550,
+            "veg":"false",
+            "quantity":1
+        },
+        {
+            "id":4,
+            "dish": "Veg meal box",
+            "description":"meal box having items for one person",
+            "price": 390,
+            "veg":"true",
+            "quantity": 1
+        },
+        {
+            "id":5,
+            "dish": "Veg manchurian",
+            "description":"Crispy fried vegetable dumplings tossed in Manchrian sauce",
+            "price": 260,
+            "veg":"true",
+            "quantity": 1
+        },
+        {
+            "id":6,
+            "dish": "Veg Biryani",
+            "description":"Vegetables in basmati rice cooked in Nizami style.",
+            "price": 150,
+            "veg":"true",
+            "quantity": 1
+              
+        },
+        {
+            "id":13,
+            "dish":"Whole Chicken",
+            "description":"Whole Chicken Marinated in PERi-PERi Sauce and Grilled",
+            "price":1350,
+            "veg":"false",
+            "quantity":1
+        },
+        {
+            "id":7,
+            "dish": "Moong Dal Halwa",
+            "description":"Classic dessert made with lentils, sugar, ghee and cardamom.",
+            "price": 380 ,
+            "veg":"true",
+            "quantity": 1
+        },
+         {
+            "id": 12,
+            "dish":"1/4 Chicken",
+            "description":"Quarter Chicken Marinated with PERi-PERi Sauce and Grilled",
+            "price":385,
+            "veg":"false",
+            "quantity":1
+        },
+        {
+            "id":8,
+            "dish":"Veg Noodles",
+            "description":"light noodles stir fries with vegetables and chilly sauce",
+            "price": 210,
+            "veg":"true",
+            "quantity": 1
+        },
+        {
+            "id":9,
+            "dish":"Chole Bhature",
+            "description":"Bhature served with our signature lip with smacking chole with masala aloo.",
+            "price": 209,
+            "veg":"true",
+            "quantity": 1
+        },
+        {
+            "id": 10,
+            "dish": "3 Chicken Wings",
+            "description": "Tender, Spicy and Juicy. Original or Peri-Crusted",
+            "price":250,
+             "veg":"false",
+            "quantity":1
+        },
+        
+        
+        {
+            "id":14,
+            "dish":"Grilled Chicken Tenders",
+            "description":"Juicy and Tender, Delicious with All Sides",
+            "price": 550,
+            "veg":"false",
+            "quantity": 1
+        },
+        {
+            "id":15,
+            "dish":"Chicken Caesar Wrap (M)",
+            "description":"Served in A Toasted Wrap Full Of PERi-PERi Chicken, Crunchy Croutons, Parmesan Cheese and Sundried Tomatoes, All Smothered in Creamy Caesar Dressing",
+            "price":335,
+            "veg":"false",
+            "quantity":1
+        },
+        {
+            "id":16,
+            "dish":"No Bones Platter",
+            "description":"For 2-3 People, Chicken Butterfly and a Espetada, with 2 Large or 4 Regular Sides",
+            "price":1550,
+            "veg":"false",
+            "quantity":1
+        }
+    ]
+

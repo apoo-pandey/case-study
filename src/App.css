@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -35,4 +36,232 @@
   to {
     transform: rotate(360deg);
   }
+}
+.menunavbar{
+  background-color:burlywood;
+  overflow: hidden;
+}
+.link{
+  padding:10px;
+  margin: 10px;
+  color:black;
+  text-decoration: none;
+  font-size: larger;
+}
+.linktable {
+  padding: 10px;
+  margin: 10px;
+  background-color:bisque;
+  color: black;
+  text-decoration: none;
+    font-size: larger;
+}
+.navbar{
+  justify-content: space-around;
+  float: right;
+  margin-top: 15px;
+}
+.img{
+float: left;
+margin-left: 100px;
+font-size: larger;
+
+}
+.home-img{
+  float: right;
+  margin-right: 150px;
+  width:max-content;
+  height:425px;
+  margin-top: 200px;
+  font-size: larger;
+  border-radius: 10px;
+}
+.home-content{
+  align-items: flex-start;
+  float: left;
+  margin-left:150px;
+  margin-top: 200px;
+  font-size: larger;
+  text-align: justify;
+}
+.home{ 
+  background-image: url('https://static.vecteezy.com/system/resources/previews/011/144/056/original/elegant-seamless-pattern-background-wallpaper-design-decoration-concept-vector.jpg');
+  display: flex;
+  background-size: cover;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+.fast-food{
+  font-size: larger;
+}
+.grid{
+  justify-content: center;
+}
+.book-table{
+  float: right;
+  margin-right: 300px;
+}
+.video{
+  margin-top: 125px;
+  height: 400px;
+  width:800px;
+}
+.table{
+  background-color:bisque;
+  background-size: cover;
+  min-height: 100vh;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/011/144/056/original/elegant-seamless-pattern-background-wallpaper-design-decoration-concept-vector.jpg');
+}
+.input-btn{
+  background-color:burlywood;
+  font-size: larger;
+}
+.gallery{
+  margin-left: 150px;
+  margin-top: 200px;
+  margin-right: 30px;
+}
+.about-content{
+ display:flex;
+ flex-direction: row;
+ justify-content:space-between;
+ background-color:antiquewhite;
+ min-height: 100vh;
+background-image: url('https://static.vecteezy.com/system/resources/previews/011/144/056/original/elegant-seamless-pattern-background-wallpaper-design-decoration-concept-vector.jpg');
+}
+.content{
+  margin-right: 10px;
+  margin-top: 200px;
+  font-size: large;
+  text-align: justify;
+}
+.menu-list{
+  list-style: none;
+  padding: 20px;
+  margin:10px;
+  background-color: antiquewhite;
+}
+.home-book-table{
+  text-decoration: none;
+  font-size: larger;
+  background-color: burlywood;
+  border: 2px solid black;
+  color:black;
+  padding: 10px;
+}
+.contact-form{
+  float: right;
+  margin-top:200px;
+  margin-right: 300px;
+}
+.contact-input{
+  height: 50px;
+}
+.cart-btn{
+  float: right;
+  background-color:burlywood;
+}
+.contact-nav{
+  display:flex;
+  justify-content: space-around;
+}
+.empty-btn{
+  background-color: burlywood;
+  padding: 10px;
+  margin:10px;
+}
+.contact{
+  background-color: antiquewhite;
+  min-height:100vh;
+}
+.cart-list{
+  justify-content:space-around;
+  list-style: none;
+  width: 200px;
+  margin-left:725px
+}
+.cart-btns{
+  display: flex;
+  justify-content:inherit;
+}
+.dec-btn{
+  background-color: rgb(202, 116, 116);
+  font-size: larger;
+}
+.inc-btn{
+  background-color: rgb(126, 185, 126);
+  font-size: larger;
+}
+.del-btn{
+  background-color: rgb(209, 209, 99);
+  font-size: larger;
+}
+.total{
+  float: left;
+  margin-left: 100px;
+  position:fixed;
+}
+.cart-page{
+  background-color:antiquewhite;
+  min-height:100vh;
+}
+.service-list{
+  list-style: none;
+  text-align: justify;
+  background-color:burlywood;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.service-list:hover{
+  transform: scale(1.1);
+  background-color:whitesmoke;
+  transition: transform .64s ease;
+}
+.service{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  background-color:white;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/011/144/056/original/elegant-seamless-pattern-background-wallpaper-design-decoration-concept-vector.jpg');
+}
+.service-icon{
+  font-size:x-large;
+}
+.main-service{
+  background-color:antiquewhite;
+  min-height: 100vh;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/011/144/056/original/elegant-seamless-pattern-background-wallpaper-design-decoration-concept-vector.jpg');
+}
+.veg{
+  float:left;
+}
+.low-high-btns{
+  float:left;
+}
+.low-high-btns button{
+  background-color:burlywood;
+  margin: 10px;
+  padding:3px;
+  font-size: large;
+  border-radius: 5px;
+}
+.menu-filter-btns button{
+  margin:10px;
+  background-color:burlywood;
+  font-size: large;
+  border-radius: 5px;
+}
+.italic-style{
+  font-family:'Brush Script MT',
+    cursive;
 }

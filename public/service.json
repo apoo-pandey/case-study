@@ -1,0 +1,74 @@
+[
+    {
+      "id":1,
+      "icon":"👩🏼‍🍳",
+      "service": "masterchef",
+      "description": "For a memorable meal the quality of the service is something that guests often remember as much as the food and drink served."
+    },
+    {
+      "id":2,
+      "icon":"🍽️",
+      "service": "Quality food",
+      "description": "For a memorable meal the quality of the service is something that guests often remember as much as the food and drink served." 
+    },
+    {
+       "id":3,
+      "icon":"🥡",
+      "service": "Online order",
+      "description": "For a memorable meal the quality of the service is something that guests often remember as much as the food and drink served."  
+    },
+    {
+        "id":3,
+      "icon":"🎧",
+      "service": "24/7 service",
+      "description": "For a memorable meal the quality of the service is something that guests often remember as much as the food and drink served."  
+    },
+     {
+      "id":1,
+      "icon":"👩🏼‍🍳",
+      "service": "masterchef",
+      "description": "For a memorable meal the quality of the service is something that guests often remember as much as the food and drink served."
+    },
+    {
+      "id":2,
+      "icon":"🍽️",
+      "service": "Quality food",
+      "description": "For a memorable meal the quality of the service is something that guests often remember as much as the food and drink served." 
+    },
+    {
+       "id":3,
+      "icon":"🥡",
+      "service": "Online order",
+      "description": "For a memorable meal the quality of the service is something that guests often remember as much as the food and drink served."  
+    },
+    {
+        "id":3,
+      "icon":"🎧",
+      "service": "24/7 service",
+      "description": "For a memorable meal the quality of the service is something that guests often remember as much as the food and drink served."  
+    },
+     {
+      "id":1,
+      "icon":"👩🏼‍🍳",
+      "service": "masterchef",
+      "description": "For a memorable meal the quality of the service is something that guests often remember as much as the food and drink served."
+    },
+    {
+      "id":2,
+      "icon":"🍽️",
+      "service": "Quality food",
+      "description": "For a memorable meal the quality of the service is something that guests often remember as much as the food and drink served." 
+    },
+    {
+       "id":3,
+      "icon":"🥡",
+      "service": "Online order",
+      "description": "For a memorable meal the quality of the service is something that guests often remember as much as the food and drink served."  
+    },
+    {
+        "id":3,
+      "icon":"🎧",
+      "service": "24/7 service",
+      "description": "For a memorable meal the quality of the service is something that guests often remember as much as the food and drink served."  
+    }
+]
