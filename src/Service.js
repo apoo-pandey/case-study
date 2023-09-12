@@ -1,19 +1,8 @@
-import { useState, useEffect } from "react";
+import { useService } from "./utils/useService";
 const Service = () => {
-  const [services, setServices] = useState([]);
-  const getData = () => {
-    fetch("./service.json")
-      .then((data) => data.json())
-      .then((data) => {
-        console.log(data);
-        setServices(data);
-      })
-      .catch((err) => console.log("err", err));
-  };
-  useEffect(() => {
-    console.log("service-use-effect got fired");
-    getData();
-  }, []);
+  // custom hook to fetch service data
+  const services = useService();
+  
   return (
     <div className="main-service">
       <h3>

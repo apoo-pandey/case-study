@@ -25,6 +25,7 @@ const Home = () => {
           Book a Table
         </Link>
       </div>
+      {/* Move static declaration to constant */}
       <img
         className="home-img"
         src="https://www.thedailymeal.com/img/gallery/why-its-technically-polite-to-leave-food-on-the-plate-at-fancy-restaurants/l-intro-1670498698.jpg"

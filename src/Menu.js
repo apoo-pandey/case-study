@@ -1,93 +1,34 @@
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { add } from "./Cart/ActionsCart";
+import useMenuList from "./utils/useMenuList";
 const Menu = () => {
   const dispatch = useDispatch();
-  let [menulist, setmenulist] = useState([]);
   //let [cartlist, setcartlist] = useState([]);
   let [category, setCategory] = useState(0);
   let showMenu = [];
-  const getData = () => {
-    fetch("./menudata.json")
-      .then((data) => data.json())
-      .then((data) => {
-        console.log(data);
-        console.log("dnvdfuvhf", category);
-        setmenulist(data);
-      })
-      .catch((err) => console.log(err));
-  };
+  const menulist = useMenuList(); 
 
-  useEffect(() => {
-    getData();
-    console.log("use-effect");
-  }, []);
-
-  const veglist = () => {
-    console.log("inside changggeeee");
-    setCategory(1);
-  };
-
-  const nonveglist = () => {
-    setCategory(2);
-  };
-
-  const all = () => {
-    setCategory(0);
-  };
-
-  const lowToHigh = () => {
-    setCategory(3);
-  };
-
-  const highToLow = () => {
-    setCategory(4);
-  };
   let [temp, setTemp] = useState("");
 
   const handleChange = (event) => {
     let input = event.target.value;
     setTemp(input);
     console.log(input);
-    //console.log(temp);
-
     console.log(showMenu);
   };
 
-  if (category == 1) {
-    for (let i = 0; i < menulist.length; i++) {
-      if (menulist[i].veg == "true") {
-        showMenu.push(menulist[i]);
-      }
-    }
-  } else if (category == 2) {
-    for (let i = 0; i < menulist.length; i++) {
-      if (menulist[i].veg == "false") {
-        showMenu.push(menulist[i]);
-      }
-    }
-  } else if (category == 3) {
-    showMenu = menulist;
-    showMenu.sort((a, b) =>
-      a.price > b.price ? 1 : a.price < b.price ? -1 : 0
-    );
-  } else if (category == 4) {
-    showMenu = menulist;
-    showMenu.sort((a, b) =>
-      a.price < b.price ? 1 : a.price > b.price ? -1 : 0
-    );
-  } else {
-    showMenu = menulist;
-  }
+  //  use Switch Case 
+  showMenu = getMenuBasedOnCategory(category, menulist, showMenu);
 
   return (
     <div>
       <div>
         <div className="low-high-btns">
-          <button onClick={lowToHigh} type="submit">
+          <button onClick={ () => setCategory(3) } type="submit">
             Low-to-High
           </button>
-          <button onClick={highToLow} type="submit">
+          <button onClick={() => setCategory(4) } type="submit">
             High-to-Low
           </button>
         </div>
@@ -98,15 +39,15 @@ const Menu = () => {
             placeholder="Search  🔎"
             onChange={handleChange}
           ></input>
-          <button type="submit" onClick={all}>
+          <button type="submit" onClick={ () => setCategory(0) }>
             All
           </button>
 
-          <button type="submit" onClick={veglist}>
+          <button type="submit" onClick={ () => setCategory(1) }>
             Veg
           </button>
 
-          <button onClick={nonveglist} type="submit">
+          <button onClick={() => setCategory(2) } type="submit">
             Non-Veg
           </button>
         </div>
@@ -124,7 +65,7 @@ const Menu = () => {
                 <li>{val.description}</li>
                 <li>₹{val.price}</li>
                 <div className="veg">
-                  {val.veg == "true" ? (
+                  {val.veg === "true" ? (
                     <img
                       height="23"
                       width="23"
@@ -166,7 +107,7 @@ export default Menu;
         </li>
         <li>{val.description}</li>
         <li>₹{val.price}</li>
-        <div className="veg">{val.veg == "true" ? "🟢" : "🔴"}</div>
+        <div className="veg">{val.veg === "true" ? "🟢" : "🔴"}</div>
         <button
           className="cart-btn"
           onClick={() => dispatch(add(val))}
@@ -188,3 +129,30 @@ export default Menu;
 
 */
 }
+function getMenuBasedOnCategory(category, menulist, showMenu) {
+  if (category === 1) {
+    for (let i = 0; i < menulist.length; i++) {
+      if (menulist[i].veg === "true") {
+        showMenu.push(menulist[i]);
+      }
+    }
+  } else if (category === 2) {
+    for (let i = 0; i < menulist.length; i++) {
+      if (menulist[i].veg === "false") {
+        showMenu.push(menulist[i]);
+      }
+    }
+  } else if (category === 3) {
+    showMenu = menulist;
+    showMenu.sort((a, b) => a.price > b.price ? 1 : a.price < b.price ? -1 : 0
+    );
+  } else if (category === 4) {
+    showMenu = menulist;
+    showMenu.sort((a, b) => a.price < b.price ? 1 : a.price > b.price ? -1 : 0
+    );
+  } else {
+    showMenu = menulist;
+  }
+  return showMenu;
+}
+

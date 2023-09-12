@@ -57,6 +57,7 @@ const BookaTable = () => {
     setOpen(1);
     console.log(booking);
   };
+
   return (
     <div>
       <div className="table">
@@ -70,7 +71,7 @@ const BookaTable = () => {
   </video>*/}
 
         <Snackbar
-          open={open == 1}
+          open={open === 1}
           autoHideDuration={6000}
           onClose={handleClose}
         >
