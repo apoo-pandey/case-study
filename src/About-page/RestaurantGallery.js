@@ -1,9 +1,8 @@
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
-import { ITEM_DATA } from "./utils/constants";
+import { ITEM_DATA } from "../utils/constants";
 
 const RestaurantGallery = () => {
-
   return (
     <div>
       <ImageList

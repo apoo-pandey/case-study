@@ -1,4 +1,4 @@
-import BookaTable from "./BookaTable";
+import BookaTable from "./BookTable/BookaTable";
 import { Link } from "react-router-dom";
 const Home = () => {
   return (

@@ -22,6 +22,10 @@ const Contact = () => {
           <p>✉️ tech@example.com</p>
         </div>
       </div>
+      <img
+        className="loc-map"
+        src="https://www.infinetsoft.com/Uploads/20170111101701google%20maps%20directions%20from%20current%20location.png"
+      />
       <div className="contact-form">
         <ContactForm />
       </div>

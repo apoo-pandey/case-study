@@ -7,7 +7,7 @@ const Menu = () => {
   //let [cartlist, setcartlist] = useState([]);
   let [category, setCategory] = useState(0);
   let showMenu = [];
-  const menulist = useMenuList(); 
+  const menulist = useMenuList();
 
   let [temp, setTemp] = useState("");
 
@@ -18,17 +18,17 @@ const Menu = () => {
     console.log(showMenu);
   };
 
-  //  use Switch Case 
+  //  use Switch Case
   showMenu = getMenuBasedOnCategory(category, menulist, showMenu);
 
   return (
     <div>
       <div>
         <div className="low-high-btns">
-          <button onClick={ () => setCategory(3) } type="submit">
+          <button onClick={() => setCategory(3)} type="submit">
             Low-to-High
           </button>
-          <button onClick={() => setCategory(4) } type="submit">
+          <button onClick={() => setCategory(4)} type="submit">
             High-to-Low
           </button>
         </div>
@@ -39,15 +39,15 @@ const Menu = () => {
             placeholder="Search  🔎"
             onChange={handleChange}
           ></input>
-          <button type="submit" onClick={ () => setCategory(0) }>
+          <button type="submit" onClick={() => setCategory(0)}>
             All
           </button>
 
-          <button type="submit" onClick={ () => setCategory(1) }>
+          <button type="submit" onClick={() => setCategory(1)}>
             Veg
           </button>
 
-          <button onClick={() => setCategory(2) } type="submit">
+          <button onClick={() => setCategory(2)} type="submit">
             Non-Veg
           </button>
         </div>
@@ -96,39 +96,6 @@ const Menu = () => {
 
 export default Menu;
 
-/*{
-  menulist.map((val, indx) => {
-    return (
-      <ul className="menu-list">
-        <li>
-          <u>
-            <strong>{val.dish}</strong>
-          </u>
-        </li>
-        <li>{val.description}</li>
-        <li>₹{val.price}</li>
-        <div className="veg">{val.veg === "true" ? "🟢" : "🔴"}</div>
-        <button
-          className="cart-btn"
-          onClick={() => dispatch(add(val))}
-          type="submit"
-        >
-          Add to Cart
-        </button>
-      </ul>
-    );
-  });
-}*/
-
-{
-  /*async function getData() {
-  const res = await fetch("/menudata.json");
-  const data = await res.json();
-  setmenulist(data);
-}
-
-*/
-}
 function getMenuBasedOnCategory(category, menulist, showMenu) {
   if (category === 1) {
     for (let i = 0; i < menulist.length; i++) {
@@ -144,15 +111,16 @@ function getMenuBasedOnCategory(category, menulist, showMenu) {
     }
   } else if (category === 3) {
     showMenu = menulist;
-    showMenu.sort((a, b) => a.price > b.price ? 1 : a.price < b.price ? -1 : 0
+    showMenu.sort((a, b) =>
+      a.price > b.price ? 1 : a.price < b.price ? -1 : 0
     );
   } else if (category === 4) {
     showMenu = menulist;
-    showMenu.sort((a, b) => a.price < b.price ? 1 : a.price > b.price ? -1 : 0
+    showMenu.sort((a, b) =>
+      a.price < b.price ? 1 : a.price > b.price ? -1 : 0
     );
   } else {
     showMenu = menulist;
   }
   return showMenu;
 }
-

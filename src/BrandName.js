@@ -1,5 +1,5 @@
-import FastfoodIcon from "@mui/icons-material/Fastfood";
-import DinnerDiningIcon from "@mui/icons-material/DinnerDining";
+//import FastfoodIcon from "@mui/icons-material/Fastfood";
+//import DinnerDiningIcon from "@mui/icons-material/DinnerDining";
 import RestaurantMenuIcon from "@mui/icons-material/RestaurantMenu";
 const BrandName = () => {
   return (
